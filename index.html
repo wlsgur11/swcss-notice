@@ -5,14 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>부트캠프 신청 안내 | 부산대학교 AI역량지원시스템</title>
 <meta name="description" content="2026 첨단산업 인재양성 부트캠프 사업설명회·해커톤·생성형 AI PBL 신청 안내">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<link rel="preload" href="fonts/Paperlogy-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* 폰트: Paperlogy (OFL). 웹용으로 KS X 1001 한글 2,350자 + 영문·기호만 남긴 woff2.
+   이전 폰트: Google Fonts "IBM Plex Sans KR" 400/500/600/700 */
+@font-face { font-family: "Paperlogy"; src: url("fonts/Paperlogy-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Paperlogy"; src: url("fonts/Paperlogy-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Paperlogy"; src: url("fonts/Paperlogy-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
 :root {
   --bg: #F3F6FB; --surface: #FFFFFF; --ink: #121A2C; --muted: #566179; --line: #DAE1EC;
   --accent: #2F57E0; --accent-ink: #FFFFFF; --accent-soft: #E7EDFD; --notice: #FFF4DA; --notice-ink: #7A5200;
-  --font: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font: "Paperlogy", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {
