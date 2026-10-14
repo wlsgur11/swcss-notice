@@ -43,7 +43,14 @@ dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .btn[aria-disabled="true"] { background: var(--line); color: var(--muted); pointer-events: none; }
 footer { display: grid; gap: 6px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 18px; }
 footer a { color: var(--accent); }
-@media (min-width: 640px) { .btn { justify-self: start; } }
+.body { display: grid; gap: 12px; min-width: 0; align-content: start; }
+.poster { display: block; justify-self: center; width: 100%; max-width: 340px; }
+.poster img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
+@media (min-width: 640px) {
+  .btn { justify-self: start; }
+  .card.has-poster { grid-template-columns: 230px 1fr; gap: 20px; align-items: start; }
+  .card.has-poster .poster { max-width: none; }
+}
 </style>
 </head>
 <body>
@@ -55,17 +62,22 @@ footer a { color: var(--accent); }
   </header>
 
   <main class="cards">
-    <section class="card" aria-labelledby="seminar-title">
-      <span class="tag">행사 신청</span>
-      <h2 id="seminar-title">2026 첨단산업 인재양성 부트캠프 2차 사업설명회</h2>
-      <dl>
-        <dt>일시</dt><dd>2026년 10월 29일(목)</dd>
-        <dt>대상</dt><dd>인공지능(AI) 분야에 관심 있는 부산대학교 재학생 (모든 전공)</dd>
-        <dt>모집</dt><dd>100명</dd>
-        <dt>신청 마감</dt><dd class="deadline">2026년 10월 16일(금)</dd>
-        <dt>문의</dt><dd>lyj55@pusan.ac.kr</dd>
-      </dl>
-      <a class="btn" href="https://forms.gle/GGLn8QVLMtw3AVQu8" target="_blank" rel="noopener">사업설명회 신청하기</a>
+    <section class="card has-poster" aria-labelledby="seminar-title">
+      <a class="poster" href="images/seminar-poster.webp" target="_blank" rel="noopener">
+        <img src="images/seminar-poster.webp" width="900" height="1200" alt="놀면 뭐하니? 2026 인공지능(AI) 분야 첨단산업 인재양성 부트캠프 2차 사업설명회 포스터">
+      </a>
+      <div class="body">
+        <span class="tag">행사 신청</span>
+        <h2 id="seminar-title">2026 첨단산업 인재양성 부트캠프 2차 사업설명회</h2>
+        <dl>
+          <dt>일시</dt><dd>2026년 10월 29일(목)</dd>
+          <dt>대상</dt><dd>인공지능(AI) 분야에 관심 있는 부산대학교 재학생 (모든 전공)</dd>
+          <dt>모집</dt><dd>100명</dd>
+          <dt>신청 마감</dt><dd class="deadline">2026년 10월 16일(금)</dd>
+          <dt>문의</dt><dd>lyj55@pusan.ac.kr</dd>
+        </dl>
+        <a class="btn" href="https://forms.gle/GGLn8QVLMtw3AVQu8" target="_blank" rel="noopener">사업설명회 신청하기</a>
+      </div>
     </section>
 
     <section class="card" aria-labelledby="hackathon-title">
