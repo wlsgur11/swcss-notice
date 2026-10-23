@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>부트캠프 신청 안내 | 부산대학교 AI역량지원시스템</title>
-<meta name="description" content="2026 첨단산업 인재양성 부트캠프 사업설명회·해커톤·생성형 AI PBL 신청 안내">
+<meta name="description" content="2026 첨단산업 인재양성 부트캠프 온디바이스 AI PBL·사업설명회·해커톤·생성형 AI PBL 신청 안내">
 <link rel="preload" href="fonts/Paperlogy-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 /* 폰트: Paperlogy (OFL). 웹용으로 KS X 1001 한글 2,350자 + 영문·기호만 남긴 woff2.
@@ -47,6 +47,9 @@ dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 footer { display: grid; gap: 6px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 18px; }
 footer a { color: var(--accent); }
 .body { display: grid; gap: 12px; min-width: 0; align-content: start; }
+.lead { font-size: 14px; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.sub-link { color: var(--accent); font-weight: 600; font-size: 14px; }
 .poster { display: block; justify-self: center; width: 100%; max-width: 340px; }
 .poster img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
 @media (min-width: 640px) {
@@ -65,6 +68,32 @@ footer a { color: var(--accent); }
   </header>
 
   <main class="cards">
+    <section class="card has-poster" aria-labelledby="ondevice-title">
+      <a class="poster" href="images/ondevice-poster.webp" target="_blank" rel="noopener">
+        <img src="images/ondevice-poster.webp" width="900" height="1200" alt="온디바이스 AI PBL 고급 몰입형 겨울계절학기 참여학생 모집 포스터">
+      </a>
+      <div class="body">
+        <span class="tag">수강신청 · 몰입형 고급</span>
+        <h2 id="ondevice-title">[2026학년도 겨울계절학기] 온디바이스 AI PBL</h2>
+        <p class="lead">Jetson Orin Nano에서 컴퓨터 비전과 로컬 언어 모델을 결합하고, 모델 최적화·사용자 데이터 기반 재학습·배포까지 경험하는 대면 PBL입니다.</p>
+        <dl>
+          <dt>교육기간</dt><dd>2026년 12월 29일(화) ~ 2027년 1월 22일(금) · 대면교육 135시간</dd>
+          <dt>워크숍</dt><dd>NVIDIA DLI 워크숍 · 인증서 취득 2027년 1월 7일(목)~8일(금)</dd>
+          <dt>참여기업</dt><dd>NVIDIA, 한컴이노스트림</dd>
+          <dt>대상</dt><dd>정보컴퓨터공학부 3~4학년 및 인공지능 분야 관련 전공 재학생 중 PCC Lv.1 이상 합격자 (30명)</dd>
+          <dt>학점</dt><dd>전공선택 3학점 · 수업료 무료</dd>
+          <dt>제출서류</dt><dd>참여신청서(참가신청서·개인정보 동의서·참가동의서·활동계획서, PDF), PCC 성적증명서(PDF)</dd>
+          <dt>선발</dt><dd>결과 2026년 11월 10일(화) 개별 문자 · 최종확정 11월 12일(목) · 중·고급 몰입형 미수료자 우선 선발</dd>
+          <dt>신청 마감</dt><dd class="deadline">2026년 10월 25일(일)</dd>
+          <dt>문의</dt><dd>051-510-3529 (da0227@pusan.ac.kr)</dd>
+        </dl>
+        <div class="actions">
+          <a class="btn" href="" target="_blank" rel="noopener">온디바이스 AI PBL 수강신청하기</a>
+          <a class="sub-link" href="https://buly.kr/5fFWvqn" target="_blank" rel="noopener">참여신청서 양식 받기</a>
+        </div>
+      </div>
+    </section>
+
     <section class="card has-poster" aria-labelledby="seminar-title">
       <a class="poster" href="images/seminar-poster.webp" target="_blank" rel="noopener">
         <img src="images/seminar-poster.webp" width="900" height="1200" alt="놀면 뭐하니? 2026 인공지능(AI) 분야 첨단산업 인재양성 부트캠프 2차 사업설명회 포스터">
